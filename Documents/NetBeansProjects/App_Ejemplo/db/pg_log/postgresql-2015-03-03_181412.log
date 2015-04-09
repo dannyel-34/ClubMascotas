@@ -1,0 +1,24 @@
+2015-03-03 18:14:12 COT LOG:  el sistema de bases de datos fue apagado en 2015-03-03 18:13:44 COT
+2015-03-03 18:14:12 COT LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-03 18:14:13 COT LOG:  lanzador de autovacuum iniciado
+2015-03-03 18:23:15 COT ERROR:  error de sintaxis en o cerca de «PRIMARY» en carácter 32
+2015-03-03 18:23:15 COT SENTENCIA:  CREATE TABLE "Clientes" ("id"  PRIMARY KEY  NOT NULL , "nombre" , "telefono" )
+	
+2015-03-03 18:23:27 COT ERROR:  error de sintaxis en o cerca de «PRIMARY» en carácter 32
+2015-03-03 18:23:27 COT SENTENCIA:  CREATE TABLE "Clientes" ("id"  PRIMARY KEY  NOT NULL , "nombre" , "telefono" )
+	
+2015-03-03 18:30:40 COT ERROR:  error de sintaxis en o cerca de «CLIENTES» en carácter 8
+2015-03-03 18:30:40 COT SENTENCIA:  CREATE CLIENTES(
+	NOMBRE VARCHAR(30),
+	APELLIDO VARCHAR(30),
+	CEDULA NUMERIC(15),
+	TELEFONO NUMERIC(15),
+	CIUDAD VARCHAR(30),
+	CONSTRAINT CLIENTES_PK PRIMARY KEY(CEDULA))
+2015-03-03 18:34:46 COT FATAL:  la autentificación password falló para el usuario «postgresql»
+2015-03-03 18:34:46 COT DETALLE:  La conexión coincidió con la línea 80 de pg_hba.conf: «host    all             all             127.0.0.1/32            md5»
+2015-03-03 18:34:55 COT FATAL:  la autentificación password falló para el usuario «postgresql»
+2015-03-03 18:34:55 COT DETALLE:  La conexión coincidió con la línea 80 de pg_hba.conf: «host    all             all             127.0.0.1/32            md5»
+2015-03-03 18:35:50 COT FATAL:  la autentificación password falló para el usuario «postgreSQL»
+2015-03-03 18:35:50 COT DETALLE:  La conexión coincidió con la línea 80 de pg_hba.conf: «host    all             all             127.0.0.1/32            md5»
+2015-03-03 18:47:59 COT LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
