@@ -17,19 +17,20 @@ import java.sql.SQLException;
 
 public class DBConexion {
    
-    Connection link = null;
+    
     public String db = "dbMascotas";
     public String host = "jdbc:mysql://localhost:3306/";
     public String user = "root";
     public String pass = "";
 
     String url = host + db + "?user=" + user + "&password="+pass;
- 
+    
     public Connection Conectar(){
-
+       Connection link = null;
        
        try{
            Class.forName("com.mysql.jdbc.Driver");
+           
            Connection conn = (Connection) DriverManager.getConnection(url);
            conn.close();
        }catch(ClassNotFoundException e){
